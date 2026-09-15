@@ -1,0 +1,241 @@
+.page-container {
+    background-color: #F5F3EC;
+    min-height: 100vh;
+    color: #000;
+    padding: 60px 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    font-family: 'Impact', sans-serif;
+  }
+  .synopsis-section {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .synopsis-content p {
+    margin: 5px 0;
+    font-size: 15px;
+  }
+  .bold-text { font-weight: 800; }
+  .mb-4 { margin-bottom: 20px !important; }
+  .divider {
+    max-width: 1000px;
+    margin: 60px auto;
+    border-top: 2px solid #ddd;
+  }
+  .matchup-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* ============================== */
+  /* 선수 정보 박스 (선 디자인 적용)   */
+  /* ============================== */
+  .fighter {
+    text-align: center;
+    width: 280px;
+  }
+  .info-box {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .info-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 12px 5px;
+  }
+  .flag {
+    font-size: 11px;
+    font-weight: 700;
+    color: #666;
+    width: 30px;
+    text-align: left;
+  }
+  .nickname {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0;
+    white-space: nowrap; /* 줄바꿈 방지 */
+  }
+  .real-name {
+    font-size: 12px;
+    font-weight: 700;
+    color: #555;
+    width: 40px;
+    text-align: right;
+  }
+  .info-bottom {
+    padding: 8px 5px;
+    text-align: left;
+  }
+  .record {
+    font-size: 12px;
+    color: #888;
+    font-weight: 700;
+  }
+  .record.right-align {
+    text-align: right;
+    display: block;
+  }
+  .text-gray { color: #aaa !important; }
+  
+  /* 실루엣 */
+  .silhouette {
+    font-size: 130px;
+    color: #4B3C68; 
+    line-height: 1;
+  }
+  
+  /* 중앙 VS 영역 */
+  .vs-area {
+    text-align: center;
+    flex: 1;
+    margin-bottom: 40px;
+  }
+  .vs-area h2 { font-size: 32px; font-weight: 900; margin-bottom: 10px; }
+  .links { font-size: 12px; font-weight: 700; margin-bottom: 10px; cursor: pointer; }
+  .youtube { color: #d00; }
+  .tba-bar {
+    background-color: #FFC64B;
+    color: #000;
+    font-weight: 900;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  .vote-bar {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 12px;
+    background: #eae8e1;
+  }
+  /* ── 공통 블랙컴뱃 상단 네비게이션바 스타일 ── */
+.bc-header {
+    background-color: #0f1115;
+    border-bottom: 3px solid #1a1a1a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.bc-top-util {
+    background-color: #000000;
+    border-bottom: 1px solid #1f232b;
+    font-size: 0.75rem;
+}
+
+.bc-util-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 6px 20px;
+    gap: 15px;
+}
+
+.bc-util-container a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.bc-util-container a:hover {
+    color: #fff;
+}
+
+.bc-lang-select {
+    background: #181b22;
+    color: #fff;
+    border: 1px solid #2a2e39;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.bc-header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px;
+    position: relative;
+    background-color: #0f1115;
+}
+
+.bc-logo-area {
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 1.25rem;
+    color: #fff;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.bc-logo-area span {
+    color: #facc15;
+}
+
+.bc-nav-bg-slant {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: #facc15;
+    clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%);
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 40px;
+}
+
+.bc-nav-links {
+    display: flex;
+    gap: 18px;
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.bc-nav-links a {
+    color: #000;
+    text-decoration: none;
+    transition: opacity 0.2s;
+    white-space: nowrap;
+}
+
+.bc-nav-links a:hover, .bc-nav-links a.active {
+    opacity: 0.6;
+}
+
+@media (max-width: 1100px) {
+    .bc-nav-bg-slant {
+        position: static;
+        clip-path: none;
+        background: transparent;
+        padding: 0;
+    }
+    .bc-nav-links {
+        gap: 10px;
+        font-size: 0.75rem;
+    }
+}

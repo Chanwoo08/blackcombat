@@ -1,0 +1,203 @@
+/* 전체 배경 (하단부 베이지톤) */
+.home-container {
+    background-color: #F5F3EC; 
+    min-height: 100vh;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  
+  /* 1. 최상단 서브 바 */
+  .top-sub-bar {
+    background-color: #111;
+    color: #999;
+    font-size: 12px;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #333;
+  }
+  .top-sub-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .top-sub-menu a {
+    color: #999;
+    text-decoration: none;
+  }
+  .top-sub-menu a:hover { color: #fff; }
+  .search-input {
+    background: transparent;
+    border: 1px solid #555;
+    color: white;
+    padding: 2px 5px;
+    width: 100px;
+  }
+  .lang-select {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 3px 5px;
+  }
+  
+  /* 2. 메인 헤더 */
+  .main-header {
+    display: flex;
+    height: 80px;
+    background-color: #000;
+  }
+  .logo-area {
+    width: 32%; /* 블랙 영역을 살짝 줄여서 밸런스 조정 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+  }
+  .logo-text {
+    color: #FFB800;
+    font-size: 24px;
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: none;
+    letter-spacing: -1px;
+  }
+  
+  /* 노란색 네비게이션 바 (사선 위치 조정) */
+  .yellow-nav {
+    width: 68%; /* 노란색 영역을 적당히 줄임 */
+    background-color: #FFB800;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 메뉴들을 노란색 영역 안에서 예쁘게 정렬 */
+    padding-left: 20px;
+    clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%); /* 사선 시작점을 더 오른쪽으로 밀어서 균형 맞춤 */
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 30px; /* 🔥 메뉴 사이 간격을 넓게 벌려서 빈 공간을 자연스럽게 채움 */
+    flex-wrap: nowrap;
+  }
+  
+  .nav-links a {
+    color: #000;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .nav-links a:hover { color: #fff; }
+  
+  /* 3. 메인 배너 (Hero) */
+  .hero-banner {
+    position: relative;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .hero-image {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    object-fit: contain;
+  }
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  .slider-arrow:hover { opacity: 1; }
+  .slider-arrow.left { left: 10%; }
+  .slider-arrow.right { right: 10%; }
+  
+  .slider-dots {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 8px;
+  }
+  .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .dot.active { background-color: #fff; }
+  
+  /* 4. 하단 카드 영역 */
+  .bottom-cards-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .cards-wrapper {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+  }
+  .action-card {
+    flex: 1;
+    background-color: #1A1A1A;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    cursor: pointer;
+  }
+  .card-text {
+    position: relative;
+    z-index: 2;
+  }
+  .card-subtitle {
+    font-family: 'Brush Script MT', cursive;
+    color: #FFB800;
+    font-size: 28px;
+    font-weight: normal;
+    margin: 0 0 5px 0;
+  }
+  .card-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 0;
+  }
+  .card-fighter-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    height: 100%;
+    background-size: cover;
+    background-position: bottom center;
+    opacity: 0.8;
+  }
+  
+  /* 자세히보기 버튼 디자인 */
+  .detail-btn {
+    display: inline-block;
+    background-color: #FFC64B;
+    color: #000;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    transition: all 0.2s;
+  }
+  .detail-btn:hover {
+    background-color: #e5b243;
+  }

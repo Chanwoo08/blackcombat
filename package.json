@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/blob": "^2.8.0",
     "mongoose": "^8.24.4",
     "next": "^15.5.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.18.3"
   },
   "devDependencies": {
     "eslint": "^9.34.0",

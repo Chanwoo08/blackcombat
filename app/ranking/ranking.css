@@ -1,0 +1,108 @@
+.ranking-container {
+    background-color: #F5F3EC;
+    min-height: 100vh;
+    padding-bottom: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  .ranking-banner {
+    background-color: #000;
+    color: #555;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  .ranking-banner h1 {
+    font-size: 50px;
+    color: #333;
+    margin: 0;
+    font-family: 'Impact', sans-serif;
+  }
+  .ranking-banner h1 span { color: #fff; }
+  .ranking-banner p { letter-spacing: 5px; font-size: 14px; }
+  
+  .tab-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+  }
+  .tab {
+    background: transparent;
+    border: 1px solid #FFC64B;
+    padding: 10px 40px;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .tab.active {
+    background-color: #FFC64B;
+    border-color: #000;
+    color: #000;
+  }
+  
+  .ranking-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .ranking-card {
+    background: #fff;
+    width: 330px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  .weight-label {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+  .weight-label.fly { background-color: #FFC64B; }
+  .weight-label.bantam { background-color: #FF9800; color: #fff; }
+  
+  .champ-info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .champ-text h2 { font-size: 20px; font-weight: 900; margin: 0; }
+  .hot { color: red; font-size: 10px; font-style: italic; }
+  .champ-text .name { font-size: 12px; color: #888; margin: 5px 0; }
+  .champ-text .record { font-size: 12px; color: #aaa; }
+  
+  .champ-img-placeholder {
+    width: 100px;
+    height: 100px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #999;
+  }
+  
+  .rank-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .rank-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f9f9f9;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .list-record {
+    margin-left: auto;
+    font-size: 12px;
+    color: #aaa;
+    font-weight: normal;
+  }

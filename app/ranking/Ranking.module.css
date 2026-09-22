@@ -1,0 +1,371 @@
+/* Ranking.module.css */
+
+.pageWrapper {
+  background-color: #0b0f19;
+  color: #ffffff;
+  min-height: 100vh;
+  font-family: 'Pretendard', sans-serif;
+}
+
+/* 상단 내비게이션 스타일 */
+.bcHeader {
+  background-color: #111827;
+  border-bottom: 1px solid #1f2937;
+}
+
+.bcTopUtil {
+  background-color: #030712;
+  padding: 8px 20px;
+  font-size: 13px;
+}
+
+.bcUtilContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.bcUtilContainer a {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.bcUtilContainer a:hover {
+  color: #ffffff;
+}
+
+.bcLangSelect {
+  background-color: #1f2937;
+  color: #ffffff;
+  border: 1px solid #374151;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bcHeaderContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.bcLogoArea {
+  font-size: 24px;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -1px;
+  color: #ffffff;
+}
+
+.bcLogoArea span {
+  color: #ef4444;
+}
+
+.bcNavLinks {
+  display: flex;
+  gap: 30px;
+}
+
+.bcNavLinks a {
+  color: #9ca3af;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.bcNavLinks a:hover,
+.bcNavLinks a.active {
+  color: #ef4444;
+}
+
+/* 본문 영역 */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.header {
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+.description {
+  color: #9ca3af;
+  font-size: 15px;
+}
+
+/* 탭 버튼 스타일 */
+.mainTabWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.mainTabBtn {
+  background-color: #1f2937;
+  color: #9ca3af;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.activeMainTab {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+.weightTabWrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.weightTabBtn {
+  background-color: #111827;
+  color: #9ca3af;
+  border: 1px solid #1f2937;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.activeWeightTab {
+  background-color: #374151;
+  color: #ffffff;
+  border-color: #4b5563;
+}
+
+/* 챔피언 카드 스타일 */
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.championCard {
+  background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+  border: 1px solid #374151;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.championHeaderBadge {
+  font-size: 16px;
+  font-weight: 800;
+  color: #fbbf24;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.championInfoGrid {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* 💡 챔피언 이미지 얼굴 잘림 방지 설정 */
+.championImgBox {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #fbbf24;
+  overflow: hidden;
+  background-color: #0b0f19;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.championImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center; /* 핵심: 상단(얼굴) 중심 정렬 */
+}
+
+.championDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.championRingName {
+  font-size: 22px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.championRealName {
+  font-size: 16px;
+  color: #9ca3af;
+  margin: 0;
+}
+
+.metaRow {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #d1d5db;
+  margin-top: 4px;
+}
+
+.dateBadge {
+  display: inline-block;
+  background-color: rgba(251, 191, 36, 0.1);
+  color: #fbbf24;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  width: fit-content;
+  margin-top: 8px;
+}
+
+.defenseBadge {
+  background-color: #374151;
+  color: #ffffff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.vacantBox {
+  text-align: center;
+  padding: 40px;
+  color: #9ca3af;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* 테이블 스타일 */
+.tableContainer {
+  background-color: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.th {
+  background-color: #1f2937;
+  color: #9ca3af;
+  padding: 14px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #1f2937;
+  font-size: 14px;
+}
+
+.tbodyTr:hover {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.tdCenter {
+  text-align: center;
+}
+
+.rankNumBadge {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  background-color: #1f2937;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.rankerRingName {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.rankerRealName {
+  color: #9ca3af;
+}
+
+.rankerRecord {
+  font-family: monospace;
+  color: #d1d5db;
+}
+
+.historySection {
+  margin-top: 20px;
+}
+
+.historyHeaderTitle {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.historyBadge {
+  background-color: #374151;
+  color: #ffffff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.periodText {
+  color: #9ca3af;
+  font-size: 13px;
+}
